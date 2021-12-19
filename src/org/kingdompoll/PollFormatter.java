@@ -12,7 +12,9 @@ public class PollFormatter {
     private static final char WHITESPACE = ' ';
 
     public List<String> format(Person person) {
-        formatPerson(person, START_INDENT);
+        if (person != null) {
+            formatPerson(person, START_INDENT);
+        }
         return formatedPoll;
     }
 
