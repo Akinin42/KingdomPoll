@@ -22,7 +22,7 @@ public class Launcher {
     public static void main(String[] args) {
         PollSorter sorter = new PollSorter();
         PollFormatter formatter = new PollFormatter();
-        for (String line : formatter.format(sorter.sortPerson(pollResults))) {
+        for (String line : formatter.format(sorter.sortPoll(pollResults))) {
             System.out.println(line);
         }
     }

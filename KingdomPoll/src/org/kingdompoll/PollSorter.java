@@ -12,7 +12,7 @@ public class PollSorter {
     private static final String POLL_DELIMITER = ": ";
     private static final String SERVANTS_DELIMITER = ", ";
 
-    public Person sortPerson(List<String> pollResults) {
+    public Person sortPoll(List<String> pollResults) {
         if (pollResults == null || pollResults.isEmpty()) {
             return new Person(KING);
         }
